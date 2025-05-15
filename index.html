@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="shortcut icon" href="https://purepng.com/public/uploads/large/purepng.com-graduation-cap-clipartclipartgraduation-cap-cliparthat-cap-student-school-graduation-mortarboard-education-university-object-degree-diploma-college-graduate-631522324199mylrq.png" type="image/x-icon">
+    <title>Denner-USA</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#processo">Sobre o Processo</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <div class="perfil">
+            <img src="images/foto-de-perfil.jpg" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="intro" data-aos="fade-up">
+            <h1>Estudante Atleta nos Estados Unidos</h1>
+            <p>Me chamo Denner, tenho 21 anos e sou Atleta de Atletismo no clube Sogipa em
+                Porto Alegre...</p>
+        </div>
+    </main>
+
+    <!-- Image Carousel -->
+    <div class="carousel">
+        <div class="carousel-images">
+            <div class="image"><img src="images/family.jpg" alt="Image 3"></div>
+
+            <div class="image"><img src="images/arataca.jpg" alt="Image 9"></div>
+
+            <div class="image"><img src="images/podioBr.jpg" alt="Image 8"></div>
+
+            <div class="image"><img src="images/poaNight.jpg" alt="Image 7"></div>
+
+            <div class="image"><img src="images/stadual.jpg" alt="Image 1"></div>
+
+            <div class="image"><img src="images/presentation.jpg" alt="Image 2"></div>
+            
+            <div class="image"><img src="images/leoteam.jpg" alt="Image 4"></div>
+
+            <div class="image"><img src="images/presentationMic.jpg" alt="Image 6"></div>
+
+            <div class="image"><img src="images/sele.jpg" alt="Image 5"></div>
+
+
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <script>
+        let currentIndex = 0;
+
+        function moveSlide(direction) {
+            const carouselImages = document.querySelector('.carousel-images');
+            const totalImages = carouselImages.children.length;
+
+            currentIndex = (currentIndex + direction + totalImages) % totalImages;
+            const offset = -currentIndex * 100;
+            carouselImages.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Automatically move to the next slide every 3 seconds
+        setInterval(() => {
+            moveSlide(1);
+        }, 3000);
+    </script>
+
+    <div id="sobre" class="sobreMim">
+        <h2>Sobre Mim</h2>
+        <p>
+            Além de atleta de alto rendimento, tmabém sou estudante de tecnologia, formado em desenvolvimento web pelo IOS (Instituto da Oportunidade Social). 
+
+            <hr>
+            
+            Pretendo seguir uma carreira na área de tecnologia, e usar o esporte como meio para alcançar meus objetivos academicos e profissionais.
+        </p>
+    </div>
+
+    <section id="processo">
+        <h2>Tranformando Esforço em Oportunidade</h2>
+        <p data-aos="fade-in">Recentemente, recebi uma bolsa de estudos para estudar na <a href="https://www.neosho.edu/">Neosho College</a>, no Kansas, Estados Unidos, para começar o semestre em agosto.</p>
+
+        <p data-aos="fade-in">Vou cursar <strong>Computer Information Systems</strong>, um programa de dois anos que prepara profissionais
+            para o mercado de
+            tecnologia.</p>
+
+        <hr data-aos="fade-in">
+
+        <img data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" src="https://athleticademix.se/custom/uploads/2022/12/ottawa-campus-800x533.jpg" alt="">
+
+        <h2>O Desafio</h2>
+
+        <p data-aos="fade-right">Para concluir o processo de matrícula, preciso comprovar estabilidade financeira no valor de <strong>US$10.000</strong>. Essa comprovação é uma exigência formal da faculdade e pode ser feita por meio de extratos bancários ou carta de banco. Eu e minha família não temos esse recurso total para comprovar, mas
+            eles aceitam diferentes comprovantes, de diferentes apoiadores.</p>
+
+        <p data-aos="flip-up" class="destaque"><span>Para explicar melhor, o apoiador não precisará pagar nada.</span> A única exigência é
+            comprovar estabilidade financeira, demonstrando recursos no valor mínimo de <span>US$10.000</span> por meio
+            de um extrato bancário ou carta do banco.</p>
+
+        <p data-aos="fade-up-right"><strong>Essa garantia é puramente formal e não implica em nenhum custo real ou obrigação financeira no
+                futuro.</strong></p>
+
+        <hr>
+
+        <div data-aos="flip-right" class="documentacao">
+            <h2>Documentação:</h2>
+            <p>A baixo deixei os documentos que a própria faculdade me enviou, junto com uma tradução que fiz para
+                compreensão do apoiador:</p>
+            <a href="https://drive.google.com/file/d/1eF_blbO5SEZEYNKoObP2ZBICXA03WwQT/view?usp=drive_link">Exemplo de
+                carta de banco (inglês)</a>
+            <a href="https://drive.google.com/file/d/1K0XOGybg7L_nuuNnp3WJjK-cbjnZt7bI/view?usp=drive_link">Carta de
+                Apoio às Demonstrações Financeiras (inglês)</a>
+            <a href="https://drive.google.com/file/d/1Xrn425OvkqtD6EUiDX2SieJo5MGzRbOR/view?usp=drive_link">Exemplo de
+                carta de banco (Português)</a>
+            <a href="https://drive.google.com/file/d/1zPhZbTSDxhYj0ivVUjLv7msVcLDRpX-3/view?usp=drive_link">Carta de
+                Apoio às Demonstrações Financeiras (Tradução)</a>
+        </div>
+
+        <hr data-aos="fade-in">
+
+        <p data-aos="fade-right">Portanto estou procurando pessoas que possam me ajudar com essa parte do processo, de alguma forma comprovando qualquer
+            quantia, se você puder me apoiar ou conhecer alguém que possa, ficarei muito grato.</p>
+
+        <hr>
+
+        <iframe data-aos="flip-down" src="https://www.youtube.com/embed/A76x1bHlNTU?si=MjzQs-B-rJJKEnZf" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        
+        <div data-aos="flip-up" class="lastImg"><img src="images/studying.jpg" alt=""></div>
+        
+
+        <p data-aos="flip-down" class="end">Estou à disposição para esclarecer qualquer dúvida sobre o processo.</p>
+    </section>
+
+    <footer id="contato">
+        <p><i>desenvolvido por DennerWebDev &copy;2025</i></p>
+
+        <hr>
+
+        <h3>Entre em contato:</h3>
+        <p>Email: dennersimao2@gmail.com</p>
+        <div class="quixklinks">
+            <a href="https://api.whatsapp.com/send/?phone=5551992714177&text&type=phone_number&app_absent=0"><img
+                    src="https://img.icons8.com/m_outlined/512/FFFFFF/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/denner_04/"><img
+                    src="https://img.icons8.com/ios_filled/512/FFFFFF/instagram-new.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    AOS.init();
+</script>
